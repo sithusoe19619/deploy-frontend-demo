@@ -3,9 +3,10 @@ import './App.css'
 
 function App() {
   const [users, setUsers] = useState([])
+  const BASE_API_URL = import.meta.env.VITE_API_URL
 
   useEffect(() => {
-    fetch('https://deploy-backend-demo.onrender.com/users')
+    fetch(BASE_API_URL + '/users')
       .then(res => res.json())
       .then(data => {
         console.log(data)
