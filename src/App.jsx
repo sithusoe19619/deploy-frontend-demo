@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   const [users, setUsers] = useState([])
   const [foods, setFoods] = useState([])
-  const BASE_API_URL = import.meta.env.VITE_API_URL || 'https://deploy-backend-demo.onrender.com'
+  const BASE_API_URL = import.meta.env.VITE_API_URL || 'https://deploy-backend-demo-n59m.onrender.com'
 
   useEffect(() => {
     fetch(BASE_API_URL + '/users')
